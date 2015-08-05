@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name=" Test Suite" parallel="false">
+ <listeners>
+    <listener class-name="taf.plug.testng.TestListener" />
+    <listener class-name="taf.core.reporting.TestReporter" />
+    <listener class-name="taf.plug.testng.SuiteListener" />
+ </listeners>
+  <test name="firefox">
+  <parameter name="browser" value="firefox" />
+    <classes>
+      <class name="tests.TestContainer">
+      <methods>
+      	<include name="test1"/>
+
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="chrome">
+  <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="tests.TestContainer">
+      <methods>
+      	<include name="test1"/>
+      </methods>
+      </class>
+    </classes>
+  </test>  
+  <test name="internet explorer">
+  <parameter name="browser" value="ie32" />
+    <classes>
+      <class name="tests.TestContainer">
+      <methods>
+        <include name="test1"/>
+      </methods>
+      </class>
+    </classes>
+  </test>  --><!-- Test -->
+</suite> <!-- Suite -->
